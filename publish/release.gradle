@@ -1,12 +1,12 @@
 apply plugin: "maven-publish"
 apply plugin: "signing"
 
-group = "io.github.sangcomz"
+group = "io.github.cyfeer-mobile"
 version = gradle.versionName
 archivesBaseName = "fishbun"
 
-def siteUrl = 'https://github.com/sangcomz/FishBun'      // Homepage URL of the library
-def gitUrl = 'https://github.com/sangcomz/FishBun.git'   // Git repository URL
+def siteUrl = 'https://github.com/cyfeer-mobile/FishBun'      // Homepage URL of the library
+def gitUrl = 'https://github.com/cyfeer-mobile/FishBun.git'   // Git repository URL
 
 afterEvaluate {
 
@@ -54,9 +54,9 @@ afterEvaluate {
                     }
                     developers {
                         developer {
-                            id = 'sangcomz'
-                            name = 'Swokwon Jeong'
-                            email = 'dev.seokwon2@gmail.com'
+                            id = 'cyfeer-mobile'
+                            name = 'CEFEER Mobile'
+                            email = 'mobile@cyfeer.com'
                         }
                     }
                     scm {
@@ -93,14 +93,14 @@ afterEvaluate {
     }
 }
 
-githubRelease {
-    owner = 'sangcomz'
-    repo = 'Fishbun'
-    token = githubAccessTokens
-    tagName = version
-    targetCommitish = 'master'
-    body = """## Release Note
-* fix issue #234 #254 
-"""
-    name = version
-}
+//githubRelease {
+//    owner = 'cyfeer-mobile'
+//    repo = 'Fishbun'
+//    token = githubAccessTokens
+//    tagName = version
+//    targetCommitish = 'master'
+//    body = """## Release Note
+//* fix SrartInAllView
+//"""
+//    name = version
+//}
